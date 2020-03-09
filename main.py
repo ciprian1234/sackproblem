@@ -57,8 +57,8 @@ print('The total weight is %f' % totalWeight)
 idealTotalWeight = sum([100/i for i in range(1, totalSacks+1)])
 print('Ideal total weight: ', idealTotalWeight)
 
-# Compute N:  N
-N = int(100 / (idealTotalWeight - totalWeight) / 10)
+# Compute N
+N = round(100.0 / (idealTotalWeight - totalWeight) / 10.0)
 print('N: ', N)
 
 
